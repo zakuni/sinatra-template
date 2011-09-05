@@ -3,9 +3,19 @@ html
   head
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js')
     script(src='main.js')
+    link rel="stylesheet" type="text/css" href="main.css"
     title Sinatra Template
 
   body
-    h1 Made with Sinatra + Slim + CoffeeScript
-    input type="button" value="hello" id="hello"
+    h1
+      | Made with 
+      a href='http://www.sinatrarb.com' Sinatra
+      |  + 
+      a href='http://www.slim-lang.com' Slim
+      |  + 
+      a href='http://www.sass-lang.com' Sass
+      |  + 
+      a href='http://jashkenas.github.com/coffee-script/' CoffeeScript
+      
+  input type="button" value="hello" id="hello"
         
