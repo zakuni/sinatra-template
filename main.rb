@@ -22,7 +22,7 @@ get '/hello/:name' do
 end
 
 post '/' do
-  '.. create something ..'
+  "#{params[:text]}"
 end
 
 put '/' do
