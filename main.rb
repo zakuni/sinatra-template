@@ -1,7 +1,7 @@
-require 'sinatra'
-require 'slim'
-require 'sass'
-require 'coffee-script'
+#require 'sinatra'
+#require 'slim'
+#require 'sass'
+#require 'coffee-script'
 
 Slim::Engine.set_default_options :pretty => true
 
