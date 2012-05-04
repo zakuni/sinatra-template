@@ -1,7 +1,7 @@
-bundle install
+### Install:
+    bundle install
 
-rackup config.ru
-
- or
-
-shotgun config.ru
+### Run:
+    rackup config.ru
+or
+    shotgun config.ru
