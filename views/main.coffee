@@ -6,12 +6,12 @@ yeah()
 $ ->
   $('#hello').click => console.log(x)
 
-  # 入力フォームが空でないかチェック
+  # check if form is empty
   $('form').submit =>
     x = $('#form1').val()
     if x isnt ""
       return true
     else
-      alert("フォームが空です")
+      alert("form is empty")
       return false
 
