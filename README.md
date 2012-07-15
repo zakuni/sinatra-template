@@ -1,8 +1,5 @@
 ### Install:
-    bundle install --path vendor/bundle
+    bundle install
 
 ### Run:
-    bundle exec rackup
-or
-
-    shotgun config.ru
+    bundle exec rackup 
