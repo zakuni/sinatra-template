@@ -1,39 +1,40 @@
-#require 'sinatra'
-#require 'slim'
-#require 'sass'
-#require 'coffee-script'
-
 Slim::Engine.set_default_options :pretty => true
 
-get '/' do
-  slim :index
-end
+class App < Sinatra::Base
+  configure :development do
+    Bundler.require :development
+    register Sinatra::Reloader
+  end
 
-get '/main.css' do
-  sass :main
-end
+  get '/' do
+    slim :index
+  end
 
-get '/main.js' do
-  coffee :main
-end
+  get '/main.css' do
+    sass :main
+  end
 
-get '/hello/:name' do
-  "Hello #{params[:name]}"
-end
+  get '/main.js' do
+    coffee :main
+  end
 
-post '/' do
-  "#{params[:text]}"
-end
+  get '/hello/:name' do
+    "Hello #{params[:name]}"
+  end
 
-put '/' do
-  '.. update something ..'
-end
+  post '/' do
+    "#{params[:text]}"
+  end
 
-delete '/' do
-  '.. annihilate something ..'
-end
+  put '/' do
+    '.. update something ..'
+  end
 
-options '/' do
-  '.. appease something ..'
-end
+  delete '/' do
+    '.. annihilate something ..'
+  end
 
+  options '/' do
+    '.. appease something ..'
+  end
+end
