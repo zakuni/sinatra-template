@@ -5,5 +5,5 @@ gem "sass"
 gem "coffee-script"
 
 group :development do
-  gem "sinatra-reloader", :require => "sinatra/reloader"
+  gem "sinatra-contrib", :require => "sinatra/reloader"
 end
