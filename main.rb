@@ -1,6 +1,9 @@
 Slim::Engine.set_default_options :pretty => true
 
 class App < Sinatra::Base
+  register Padrino::Sprockets
+  sprockets
+
   configure :development do
     Bundler.require :development
     register Sinatra::Reloader
