@@ -13,14 +13,6 @@ class App < Sinatra::Base
     slim :index
   end
 
-  get '/main.css' do
-    sass :main
-  end
-
-  get '/main.js' do
-    coffee :main
-  end
-
   get '/hello/:name' do
     "Hello #{params[:name]}"
   end
