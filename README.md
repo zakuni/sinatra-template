@@ -1,5 +1,10 @@
 ### Install:
-    bundle install
+    % bundle install
 
 ### Run:
-    bundle exec rackup 
+    % gem install foreman
+    % foreman start
+
+### Deploy to Heroku
+    % heroku create --stack cedar APP_NAME
+    % git push heroku master
