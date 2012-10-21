@@ -10,7 +10,7 @@ class App < Sinatra::Base
   end
 
   get '/' do
-    slim :index
+    slim :index, :locals => {:title => "Sinatra Template"}
   end
 
   get '/hello/:name' do
