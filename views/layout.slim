@@ -7,7 +7,10 @@ html
     link rel="stylesheet" href="assets/main.css"
     title #{title}
   body
-    == yield
+    .wrapper
+      == yield
+      .push
     footer
-      hr
-      #footer by zakuni
+      .footer
+        hr
+          | by zakuni
