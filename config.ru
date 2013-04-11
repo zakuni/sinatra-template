@@ -2,5 +2,5 @@ require 'bundler'
 
 Bundler.require
 
-require './main.rb'
+require './controllers/main.rb'
 run App
